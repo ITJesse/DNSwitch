@@ -4,7 +4,8 @@
   "description": "A DNS Switcher for Nintendo Switch to active built-in bowser",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dns": "dns-proxy --config ./dns.json",
+    "web": "node web.js"
   },
   "author": "ITJesse",
   "license": "GPL-3.0",
@@ -13,8 +14,7 @@
     "koa": "next",
     "koa-logger": "next",
     "koa-route": "next",
-    "koa-static": "^3.0.0",
-    "native-dns": "^0.7.0"
+    "koa-static": "^3.0.0"
   },
   "devDependencies": {},
   "repository": {
