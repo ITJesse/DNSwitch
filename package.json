@@ -1,0 +1,34 @@
+{
+  "name": "dnswitch",
+  "version": "0.0.1",
+  "description": "A DNS Switcher for Nintendo Switch to active built-in bowser",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ITJesse",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "dns-proxy": "^0.5.0",
+    "koa": "next",
+    "koa-logger": "next",
+    "koa-route": "next",
+    "koa-static": "^3.0.0",
+    "native-dns": "^0.7.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITJesse/DNSwitch.git"
+  },
+  "keywords": [
+    "DNSwitch",
+    "NintendoSwitch",
+    "Nintendo",
+    "Switch"
+  ],
+  "bugs": {
+    "url": "https://github.com/ITJesse/DNSwitch/issues"
+  },
+  "homepage": "https://github.com/ITJesse/DNSwitch#readme"
+}

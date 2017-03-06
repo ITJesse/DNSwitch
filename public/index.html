@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>DNSwitch</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <form role="form" id="form" style="margin-top: 80px;">  
+          <div class="row">
+            <div class="col-12">
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control" id="url"/>
+                <div class="input-group-btn">
+                  <button type="submit" id="go" class="btn">Go</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      $('#form').on('submit', function(e) {
+        e.preventDefault();
+        var url = $('#url').val();
+        if (url.substr(0, 4) != 'http') {
+          url = 'http://' + url;
+        }
+        console.log(url);
+        window.location.href = url;
+      });
+    </script>
+  </body>
+</html>
