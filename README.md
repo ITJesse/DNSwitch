@@ -15,5 +15,5 @@ A DNS Switcher for Nintendo Switch to active built-in bowser
 6. Run Web server `sudo npm run web`
 7. Connect your Nintendo Switch to the same router with your computer
 8. Set the connection`s DNS server to your computer's IP
-9. Follow the muenu, and you will see the input box.
+9. Follow the menu, and you will see the input box.
 10. Have fun!
